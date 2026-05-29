@@ -42,6 +42,7 @@ The outputs include comparisons between target mode profiles and recovered demul
 - `Mode/`: amplitude-distribution images of the first 16 fiber modes, computed with the fiber-mode calculation functions in `fiber/` and provided as reference mode-profile resources.
 - `Pre_trained_DNN/`: pretrained holographic phase files for reproducing selected demultiplexing designs.
 - `Sim_Result/`: representative output figures generated from the comparison script.
+- `requirements.txt`: Python package requirements used in the development environment.
 
 ## Features
 
