@@ -39,12 +39,14 @@ The outputs include comparisons between target mode profiles and recovered demul
 - `fiber/`: fiber-mode calculation and SLM-related simulation utilities. These modules can be reused in multimode-fiber research.
 - `ONNtrain/`: diffractive neural network models, propagation modules, trainers, and inference utilities for mode demultiplexing.
 - `utils/`: shared plotting, propagation, phase-saving, mode-placement, normalization, and analysis helper functions.
+- `Mode/`: amplitude-distribution images of the first 16 fiber modes, computed with the fiber-mode calculation functions in `fiber/` and provided as reference mode-profile resources.
 - `Pre_trained_DNN/`: pretrained holographic phase files for reproducing selected demultiplexing designs.
 - `Sim_Result/`: representative output figures generated from the comparison script.
 
 ## Features
 
 - Definition and generation of fiber optical fields
+- Reference amplitude distributions for the first 16 fiber modes
 - Holographic phase design based on diffractive neural networks
 - Encoding phase design for converting Gaussian beams into target complex-amplitude optical fields
 - Demultiplexing phase design for mode-profile-preserved fiber-mode separation
