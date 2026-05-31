@@ -44,6 +44,29 @@ The outputs include comparisons between target mode profiles and recovered demul
 - `Sim_Result/`: representative output figures generated from the comparison script.
 - `requirements.txt`: Python package requirements used in the development environment.
 
+## Installation
+
+Install the Python dependencies with:
+
+```bash
+pip install -r requirements.txt
+```
+
+The provided `requirements.txt` uses the CUDA 12.8 builds of PyTorch and torchvision. For a CPU-only environment or a different CUDA version, install the appropriate PyTorch packages for your system.
+
+## Public Scripts
+
+The public scripts are located in `main/`. Usage notes are included above the corresponding test functions.
+
+- `Calibration_pattern.py`: generates multi-plane reflection alignment holographic phase patterns.
+- `Mode_encoding_SLM_design.py`: generates SLM encoding patterns from mode coefficients.
+- `Mode_frequency_analysis.py`: analyzes the spatial-frequency content of fiber modes.
+- `Single_mode_division_ONN_design.py`: designs and tests a single-mode demultiplexing optical neural network.
+- `Single_mode_generation_SLM.py`: generates encoded SLM patterns for single-mode distributions.
+- `Mode_division_ONN_comparison.py`: compares spherical phase and microlens-array phase based ONN designs.
+- `SLM_ONN_phase_design.py`: designs and exports full-resolution SLM phases for an ONN using the real SLM geometry.
+- `Few_mode_fiber_SLM_ONN_design.py`: designs, trains, and exports a few-mode-fiber SLM ONN for the fiber experiment.
+
 ## Features
 
 - Definition and generation of fiber optical fields
@@ -59,6 +82,19 @@ The outputs include comparisons between target mode profiles and recovered demul
 This repository provides pretrained `.pth` files for fiber-mode demultiplexing holographic phase design, including 4-mode and 8-mode demultiplexing examples.
 
 These pretrained files can be used to reproduce the corresponding mode-profile-preserved demultiplexing results.
+
+The public scripts directly reference:
+
+- `modulator_Simulation_Singlemode_4layer.pth`
+- `modulator_comparison_8lemode_4layer_SP_1000.pth`
+- `modulator_comparison_8lemode_4layer_array_1000.pth`
+- `modulator_slm_semantice_3layer_paper_result.pth`
+- `modulator_slm_semantice_3layer_paper_result_fibre.pth`
+
+Additional comparison model versions are also included:
+
+- `modulator_comparison_8lemode_4layer_SP.pth`
+- `modulator_comparison_8lemode_4layer_array.pth`
 
 ## Code Availability
 
